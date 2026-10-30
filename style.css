@@ -34,6 +34,14 @@ button {
   cursor: pointer;
 }
 
+#catalog {
+  padding-top: 10px;
+}
+
+#catalog h2 {
+  margin-top: 0;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -71,6 +79,36 @@ button {
   color: #aaa6b2;
   font-size: 20px;
 }
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+  color: #aaa6b2;
+}
+
+.icon-button svg {
+  width: 22px;
+  height: 22px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-button:hover {
+  color: #91e6d5;
+}
+
 
 .hero {
   min-height: 800px;
@@ -244,19 +282,23 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
-  padding: 45px 8% 30px;
+  padding: 2px 8% 2px;
   background: var(--dark);
 }
 
 .footer-logo {
-  width: min(370px, 100%);
+  width: min(900px, 100%);
   margin-bottom: 28px;
+  padding-left: 220px;
+  transform: translateY(-60px);
 }
 
 .footer-columns {
   display: flex;
   gap: 65px;
   font-size: 13px;
+  padding-left: 250px;
+  transform: translateY(-150px);
 }
 
 .footer-columns p {
@@ -264,16 +306,21 @@ button {
 }
 
 .footer-art {
+  display: block;
   width: 100%;
-  max-height: 320px;
-  object-fit: cover;
+  height: 320px;
+  object-fit: contain;
+  object-position: center;
+  transform: translateY(50px) translateX(-20px);
 }
 
 .footer small {
-  position: absolute;
+  position: absolute; 
   right: 8%;
   bottom: 12px;
   font-size: 10px;
+  padding-right: 250px;
+  transform: translateY(-100px)
 }
 
 @media (max-width: 800px) {
