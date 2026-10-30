@@ -278,18 +278,19 @@ button {
 }
 
 .footer {
-  position: relative;
+  position: relative; 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
   padding: 2px 8% 2px;
   background: var(--dark);
+  
 }
 
 .footer-logo {
-  width: min(900px, 100%);
+  width: min(1000px, 100%);
   margin-bottom: 28px;
-  padding-left: 220px;
+  padding-left: 210px;
   transform: translateY(-60px);
 }
 
