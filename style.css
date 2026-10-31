@@ -48,6 +48,7 @@ button {
   width: 100%;
   max-width: 100%;
   background: #170f36;
+  text-align: center;
 }
 
 .sound-intro > img {
@@ -64,7 +65,10 @@ button {
   left: 7%;
   bottom: 8%;
   max-width: 650px;
+  white-space: nowrap;
   color: white;
+  transform: translateX(50%);
+
 }
 
 .sound-intro-text h1 {
@@ -109,6 +113,11 @@ button {
 
 .character-section img {
   width: 82%;
+}
+
+.character-section-header img {
+  width: 100%;
+  min-width: 2000px;
 }
 
 .carousel-button {
