@@ -1,0 +1,358 @@
+/* Terms of Service Page */
+.tos-page {
+    --tos-bg: #30245f;
+    --tos-purple: #392b75;
+    --tos-dark: #100c1e;
+    --tos-heading: #efc2ec;
+    --tos-teal: #91d6d2;
+    --tos-text: #f5efff;
+
+    background: linear-gradient(
+        135deg,
+        #211a46,
+        #44328a
+    );
+
+    color: var(--tos-text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* Title Banner */
+.tos-page .hero-banner {
+    background: #27204e;
+    text-align: center;
+    padding: 35px 20px 25px;
+    border-bottom: 2px solid #91d6d2;
+}
+
+.tos-page .hero-banner h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: var(--tos-teal);
+    margin: 0 0 12px;
+    letter-spacing: 1px;
+}
+
+.tos-page .last-updated {
+    display: block;
+    font-size: 12px;
+    color: #d8ccec;
+    margin-top: 10px;
+}
+
+/* Main Layout */
+.tos-page .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 30px 25px;
+}
+
+.tos-page .terms-grid {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+/* Contents Sidebar */
+.tos-page .toc-sidebar {
+    position: sticky;
+    top: 25px;
+
+    background: #211a43;
+    padding: 25px 20px;
+
+    border: 1px solid #65539c;
+    border-radius: 10px;
+}
+
+.tos-page .toc-sidebar h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: var(--tos-heading);
+    margin: 0 0 18px;
+}
+
+.tos-page .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tos-page .toc-list a {
+    display: block;
+    width: 100%;
+
+    color: #e9dff8;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+
+    padding: 8px 10px;
+    border-radius: 6px;
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tos-page .toc-list a:hover {
+    background: #4e3b83;
+    color: var(--tos-teal);
+}
+
+.tos-page .toc-list a:focus-visible {
+    outline: 2px solid var(--tos-teal);
+    outline-offset: 2px;
+}
+
+/* Terms Content */
+.tos-page .terms-content {
+    position: relative;
+    min-width: 0;
+
+    background-color: var(--tos-purple);
+
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.09) 1px,
+        transparent 1px
+    );
+
+    background-size: 14px 14px;
+
+    padding: 35px 40px;
+    border-radius: 8px;
+    border: 1px solid #65539c;
+}
+
+/* Individual Sections */
+.tos-page .terms-section {
+    margin-bottom: 30px;
+    scroll-margin-top: 30px;
+}
+
+.tos-page .terms-section:last-child {
+    margin-bottom: 0;
+}
+
+.tos-page .terms-section h2 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: var(--tos-heading);
+
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
+    text-transform: uppercase;
+}
+
+.tos-page .terms-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--tos-text);
+    margin: 0 0 10px;
+}
+
+.tos-page .terms-section ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+}
+
+.tos-page .terms-section li {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--tos-text);
+    margin-bottom: 5px;
+}
+
+.tos-page .terms-section a {
+    color: #b9efea;
+}
+
+.tos-page .terms-section code {
+    color: #f4c9e9;
+}
+
+/* Important Section */
+.tos-page .info-box {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tos-page .info-box p {
+    color: var(--tos-text);
+}
+
+/* Will Draw / Won't Draw */
+.tos-page .draw-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.tos-page .will-draw,
+.tos-page .wont-draw {
+    background: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+.tos-page .will-draw h3,
+.tos-page .wont-draw h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: normal;
+    color: var(--tos-heading);
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.tos-page .will-draw ul,
+.tos-page .wont-draw ul {
+    padding-left: 20px;
+}
+
+/* Decorative Stars */
+.tos-page .terms-content::before {
+    content: "✦";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+
+    color: #f5cf75;
+    font-size: 38px;
+    pointer-events: none;
+}
+
+.tos-page .terms-content::after {
+    content: "✧";
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+
+    color: #c9b6ff;
+    font-size: 55px;
+    pointer-events: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 850px) {
+    .tos-page .terms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tos-page .toc-sidebar {
+        position: static;
+    }
+
+    .tos-page .toc-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tos-page .terms-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tos-page .hero-banner h1 {
+        font-size: 28px;
+    }
+
+    .tos-page .container {
+        padding: 15px;
+    }
+
+    .tos-page .terms-content {
+        padding: 20px 15px;
+    }
+
+    .tos-page .draw-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+
+    padding: 30px 8%;
+    background: #0c0917;
+    position: relative;
+}
+
+.footer-logo {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+
+    margin-bottom: 20px;
+    padding-left: 0;
+    transform: none;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 40px;
+
+    padding-left: 0;
+    transform: none;
+    font-size: 13px;
+}
+
+.footer-columns p {
+    margin: 5px 0;
+}
+
+.footer-art {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    height: auto;
+
+    object-fit: contain;
+    transform: none;
+}
+
+.footer small {
+    position: absolute;
+    bottom: 12px;
+    right: 8%;
+
+    padding-right: 0;
+    transform: none;
+    font-size: 10px;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 30px 20px 50px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-art {
+        max-height: 250px;
+    }
+}
