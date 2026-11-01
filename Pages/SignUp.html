@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="icon" type="image/png" href="../src/assets/logo-small.png">
+    <title>Sign Up</title>
+</head>
+
+
+<body>
+    <main class="signUpBackground">
+        <form class="signUpContainer">
+            <h1>Sign Up</h1>
+
+            <label for "email">Email Address</label>
+            <div class="infoContainer">
+                <input id="email" name="email" type="email" placeholder="example@email.com" required>
+            </div>
+
+
+            <label for "password">Password</label>
+            <div class="infoContainer">
+                <input id="password" name="password" type="password" placeholder="password123" required>
+            </div>
+
+            <label for "confirm-password">Re-Enter Password</label>
+            <div class="infoContainer">
+                <input id="confirm-password" name="confirm-password" type="password" placeholder="password123" required>
+            </div>
+
+
+            <label class="terms" for="terms">
+                <input type="checkbox" class="Checkbox">
+                I agree to <a href="/ToS">terms and services</a>
+            </label>
+
+            <button type="submit" class="button">Confirm</button>
+
+
+            <!--Need to connect to Sign In Page-->
+
+            <p class="login">Already have an account? <a href="/SignIn">Log in</a></p>
+
+        </form>
+    </main>
+</body>
+
+</html>

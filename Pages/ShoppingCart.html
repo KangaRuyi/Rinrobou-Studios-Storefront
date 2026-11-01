@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="icon" type="image/png" href="../src/assets/logo-small.png">
+    <title>Shopping Cart</title>
+</head>
+
+
+<body>
+    <main class="ShoppingCart-Background">
+
+        <div class="ShoppingCartHeader">
+            <h1>Your Cart</h1>
+        </div>
+
+        <label class="SelectAll">
+            <!--NEED TO FIX CHECKBOX LOCATION-->
+            <input type="checkbox">
+            Select all ([item_amt])
+        </label>
+
+
+        <form class="ShoppingCartItem">
+            <input type="checkbox" class="ShoppingCartItemCheckbox">
+            <form>
+                <label>[item_name]</label>
+                <label>[item_type]</label>
+            </form>
+
+        </form>
+
+        <form class="ShoppingCartItem">
+            <input type="checkbox" class="ShoppingCartItemCheckbox">
+            <form>
+                <label>[item_name]</label>
+                <label>[item_type]</label>
+            </form>
+
+        </form>
+
+        <form class="ShoppingCartItem">
+            <input type="checkbox" class="ShoppingCartItemCheckbox">
+            <form>
+                <label>[item_name]</label>
+                <label>[item_type]</label>
+            </form>
+
+        </form>
+
+
+        <form class="CheckOutForm">
+            <p class="CheckoutSubtotal">
+                Subtotal ([item_amt]): $[sub_cost]
+            </p>
+            <label class="CheckoutConfirm">
+                <input type="checkbox" class="Checkbox">
+                Confirm Order
+            </label>
+            <div class="ProceedToCheckoutButton">
+                <button type="submit" class="button">Proceed to Checkout</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
