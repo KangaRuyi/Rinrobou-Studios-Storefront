@@ -48,7 +48,6 @@ button {
   width: 100%;
   max-width: 100%;
   background: #170f36;
-  text-align: center;
 }
 
 .sound-intro > img {
@@ -65,10 +64,7 @@ button {
   left: 7%;
   bottom: 8%;
   max-width: 650px;
-  white-space: nowrap;
   color: white;
-  transform: translateX(50%);
-
 }
 
 .sound-intro-text h1 {
@@ -113,11 +109,6 @@ button {
 
 .character-section img {
   width: 82%;
-}
-
-.character-section-header img {
-  width: 100%;
-  min-width: 2000px;
 }
 
 .carousel-button {
@@ -446,4 +437,289 @@ button {
     flex-direction: column;
     gap: 20px;
   }
+}@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+/*Sign Up Page CSS*/
+
+.signUpBackground {
+  min-height: 100vh;
+  background-image: url("./src/assets/donut-float.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 2 rem 10%
+}
+
+.signUpContainer {
+  width: min(100%, 360px);
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: #D9D9D9;
+  color: #111;
+  font-size: 1rem;
+}
+
+.signUpContainer h1 {
+  margin: 0 0 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.signUpContainer>label:not(.terms) {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.signUpContainer>input {
+  display: block;
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid #888;
+  border-radius: 10px;
+
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0.7rem 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.signUpContainer button {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #70432e;
+  border-radius: 10px;
+  background: #C77950;
+  transition: background-color 0.3s ease;
+  color: #111;
+  cursor: pointer;
+}
+
+.signUpContainer button:hover {
+  background: #835234;
+}
+
+.login {
+  margin: 0.65rem 0 0;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+/*Forgot Password Page CSS*/
+
+.forgotPassword-background {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: url("./src/assets/Forgot-password-page-background.png") center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(10px, 4vh, 60px) 1rem;
+}
+
+.forgotPassword-Q {
+  margin-top: 10%;
+  color: white;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+  text-align: center;
+}
+
+.forgotPasswordContainer {
+  margin-top: 5%;
+  width: min(90%, 500px);
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: rgb(217 217 217 / 30%);
+  color: rgb(000 000 000);
+  text-align: center;
+  font-size: clamp(1rem, 2vw + 1rem, 2rem);
+}
+
+.infoContainer {
+  margin-top: 10%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  background: rgb(217 217 217 / 80%);
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+  font-size: clamp(1rem, 2vw + 1rem, 2rem);
+}
+
+.button {
+  cursor: pointer;
+}
+
+
+/*Error Page CSS*/
+
+.ErrorPage-background {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: url("./src/assets/404Background.png") center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.ErrorPageHeader {
+  margin-top: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+  text-align: left;
+}
+
+.ErrorPageMsg {
+  margin-right: 20%;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+  text-align: left;
+}
+
+/*Shopping Cart CSS*/
+
+.ShoppingCart-Background {
+  position: relative;
+  min-height: 100vh;
+  background: url("./src/assets/ShoppingCartBackground.png") center / cover no-repeat;
+}
+
+.ShoppingCartHeader {
+  margin-left: 10%;
+  display: flex;
+  width: 424px;
+  height: 156px;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--Secondary, #C773EF);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.SelectAll {
+  margin-left: 10%;
+  display: flex;
+  width: 576px;
+  height: 87px;
+  flex-direction: column;
+  justify-content: center;
+  color: #C773EF;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ShoppingCartItem {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  background: rgb(217 217 217 / 80%);
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+  font-size: clamp(1rem, 2vw + 1rem, 2rem);
+  flex-direction: column;
+}
+
+.Checkbox {
+  cursor: pointer;
+}
+
+.CheckOutForm {
+  position: absolute;
+  top: 10%;
+  right: 7%;
+  width: min(320px, 35%);
+  box-sizing: border-box;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #D9D9D9;
+  border-radius: 32px;
+  border: 4px solid #161523;
+  opacity: 0.2;
+  background: #C773EF;
+}
+
+.CheckoutSubtotal {
+  margin: 0;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+.CheckoutConfirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+}
+
+.CheckoutConfirm input {
+  accent-color: #C773EF;
+}
+
+.ProceedToCheckoutButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.ProceedToCheckoutButton .button {
+  width: 100%;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  border-radius: 32px;
+  border: 4px solid #161523;
+  opacity: 0.2;
+  background: #C773EF;
+  color: #d9d9d9;
+  font: 500 18px Poppins, sans-serif;
+  cursor: pointer;
+}
+
+.ProceedToCheckoutButton .button:hover {
+  background: #9A5AB9;
 }

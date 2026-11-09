@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product - RinRobou Studios</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  <header class="navbar">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#catalog">Catalog</a>
+        <a href="sound.html">Portfolio</a>
+        <a href="index.html#about">About Us</a>
+      </nav>
+
+      <a href="index.html" class="nav-logo">
+        <img src="src/assets/logo-small.png" alt="RinRobou Studios" />
+      </a>
+
+      <div class="nav-icons">
+        <button class="icon-button" aria-label="Account">
+          <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <circle cx="12" cy="8" r="3.5"></circle>
+              <path d="M5 20c.8-3.5 3.2-5.5 7-5.5s6.2 2 7 5.5"></path>
+          </svg>
+        </button>
+        <button aria-label="Search">⌕</button>
+        <button aria-label="Shopping cart">🛒</button>
+      </div>
+  </header>
+  <main class="product-page">
+
+    <div class="product-top">
+
+      <!-- Product Gallery -->
+      <div class="product-gallery">
+
+        <div class="product-thumbnails">
+          <button class="thumbnail active" type="button">1</button>
+          <button class="thumbnail" type="button">2</button>
+          <button class="thumbnail" type="button">3</button>
+        </div>
+
+        <div class="product-main-image">
+          <button class="gallery-arrow prev"
+                  type="button"
+                  aria-label="Previous image">❮</button>
+
+          <div id="current-product-image"
+              class="product-image-placeholder">
+            Product Image 1
+          </div>
+
+          <button class="gallery-arrow next"
+                  type="button"
+                  aria-label="Next image">❯</button>
+        </div>
+      </div>
+
+      <!-- Product Information -->
+      <div class="product-info">
+
+        <span class="product-category">PRODUCT CATEGORY ✦</span>
+        <h1>Product Name</h1>
+
+        <p class="price-label">Starting Price</p>
+        <h2 class="product-price" id="product-price">$XX.XX</h2>
+
+        <!-- Licensing -->
+        <div class="license-options">
+          <label>
+            <input type="radio" name="license" value="personal" checked>
+            <span>Personal Use</span>
+            <span class="license-price">Included</span>
+          </label>
+
+          <label>
+            <input type="radio" name="license" value="content">
+            <span>Commercial: Content</span>
+            <span class="license-price">Additional Fee</span>
+          </label>
+
+          <label>
+            <input type="radio" name="license" value="merchandise">
+            <span>Commercial: Merchandising</span>
+            <span class="license-price">Additional Fee</span>
+          </label>
+        </div>
+
+        <div class="license-note">
+          Licensing information will be displayed here.
+        </div>
+
+        <!-- Waitlist -->
+        <div class="waitlist-card">
+          <h3>WAITLIST STATUS</h3>
+
+          <p class="queue-label">CUSTOMER QUEUE</p>
+          <p class="queue-count">
+            <strong>XX customers</strong>
+            currently in waitlist
+          </p>
+
+          <p class="waitlist-instruction">
+            Please accept terms to join waitlist
+          </p>
+
+          <label class="terms-checkbox">
+            <input type="checkbox" id="accept-terms">
+            <span>
+              I accept the
+              <a href="terms-of-service.html">Terms of Service</a>
+            </span>
+          </label>
+        </div>
+
+        <button id="join-waitlist"
+                class="join-waitlist"
+                disabled>
+          Join Waitlist
+        </button>
+
+        <p id="waitlist-message" role="status"></p>
+
+      </div>
+    </div>
+
+    <!-- Product Tabs -->
+    <div class="product-bottom">
+
+      <div class="product-tabs">
+        <button class="product-tab active"
+                type="button"
+                data-tab="description">DESCRIPTION</button>
+
+        <button class="product-tab"
+                type="button"
+                data-tab="details">DETAILS</button>
+
+        <button class="product-tab"
+                type="button"
+                data-tab="reviews">REVIEWS</button>
+      </div>
+
+      <div id="product-tab-content">
+
+        <!-- Description -->
+        <section id="description-panel" class="product-panel">
+          <div class="description-layout">
+            <div class="description-text">
+              <h2>PRODUCT DESCRIPTION</h2>
+
+              <p>Product description will be displayed here.</p>
+
+              <p>Commission Process:</p>
+              <ol>
+                <li>Submit commission request</li>
+                <li>Wait for approval</li>
+                <li>Receive pricing information</li>
+                <li>Commission work begins</li>
+                <li>Receive completed artwork</li>
+              </ol>
+            </div>
+
+            <div class="description-image-placeholder">
+              Description Image
+            </div>
+          </div>
+        </section>
+
+        <!-- Details -->
+        <section id="details-panel" class="product-panel" hidden>
+          <div class="product-details-layout">
+            <div class="product-details-text">
+              <ul class="details-list">
+                <li>Fully rendered, full body PNG</li>
+                <li>
+                  At this time, this type of commission accepts
+                  a max of <strong>3-4 characters.</strong>
+                  Please let us know if you would like all
+                  characters together on the same canvas or separate.
+                </li>
+                <li>
+                  Pricing is buy one half chibi, get one half
+                  chibi 50% off. Simple colored background and
+                  transparent background included.
+                </li>
+                <li>
+                  Any complex details will be simplified to
+                  fit the half chibi art style.
+                </li>
+                <li>
+                  Small props and simplified animals/mascots
+                  are okay to ask for with no added cost.
+                </li>
+              </ul>
+            </div>
+
+            <div class="details-image-placeholder">
+              <span>Artwork Placeholder</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews-panel" class="product-panel" hidden>
+          <div class="product-reviews">
+
+            <div class="reviews-summary">
+              <div class="rating-breakdown">
+
+                <div class="rating-row">
+                  <span>★★★★★</span>
+                  <div class="rating-bar">
+                    <div style="width:100%"></div>
+                  </div>
+                  <span>100%</span>
+                </div>
+
+                <div class="rating-row">
+                  <span>★★★★☆</span>
+                  <div class="rating-bar">
+                    <div style="width:0%"></div>
+                  </div>
+                  <span>0%</span>
+                </div>
+
+                <div class="rating-row">
+                  <span>★★★☆☆</span>
+                  <div class="rating-bar">
+                    <div style="width:0%"></div>
+                  </div>
+                  <span>0%</span>
+                </div>
+
+                <div class="rating-row">
+                  <span>★★☆☆☆</span>
+                  <div class="rating-bar">
+                    <div style="width:0%"></div>
+                  </div>
+                  <span>0%</span>
+                </div>
+
+                <div class="rating-row">
+                  <span>★☆☆☆☆</span>
+                  <div class="rating-bar">
+                    <div style="width:0%"></div>
+                  </div>
+                  <span>0%</span>
+                </div>
+              </div>
+
+              <div class="overall-rating">
+                <div class="review-avatar-placeholder">
+                  Reviews Image
+                </div>
+                <p>⭐ 5.0 – 2 reviews</p>
+              </div>
+            </div>
+
+            <div class="review-cards">
+
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="review-user">
+                    <div class="user-avatar">U1</div>
+                    <div>
+                      <strong>Username 1</strong>
+                      <p>★★★★★ · Jan 2026</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-body">
+                  <p>Customer review placeholder...</p>
+                  <div class="review-image-placeholder">
+                    Review Image
+                  </div>
+                </div>
+              </article>
+
+              <article class="review-card">
+                <div class="review-header">
+                  <div class="review-user">
+                    <div class="user-avatar">U2</div>
+                    <div>
+                      <strong>Username 2</strong>
+                      <p>★★★★★ · Aug 2026</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-body">
+                  <p>Customer review placeholder...</p>
+                  <div class="review-image-placeholder">
+                    Review Image
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer" id="about">
+      <div class="footer-brand">
+        <img
+          src="src/assets/logo-large.png"
+          alt="RinRobou Studios"
+          class="footer-logo"
+        />
+
+        <div class="footer-columns">
+          <div>
+            <strong>(951)-208-5524</strong>
+            <p>rinroboustudios@gmail.com</p>
+            <p>Burbank, CA</p>
+          </div>
+
+          <div>
+            <strong>Business Hours</strong>
+            <p>MONDAY - FRIDAY</p>
+            <p>9:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Pinterest">P</a>
+        </div>
+      </div>
+
+      <img
+        src="src/assets/footer-art.png"
+        alt="RinRobou character artwork"
+        class="footer-art"
+      />
+
+      <small>©2027 RinRobou Studios, All Rights Reserved</small>
+  </footer>
+</body>
+</html>
