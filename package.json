@@ -7,5 +7,6 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.6"
+    "tailwindcss": "^4.3.3"
   }
 }
